@@ -8,9 +8,18 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-    <header>
-  <h1 class="text-4xl">Nav</h1>
-    </header>
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-white font-bold">
+                <a href="/">MyApp</a>
+            </div>
+            <div class="space-x-4">
+                    <a href="" class="text-white">Dashboard</a>
+                    <a href="" class="text-white">Login</a>
+                    <a href="" class="text-white">Register</a>
+            </div>
+        </div>
+    </nav>
     <main>
         {{ $slot }}
     </main>
