@@ -9,10 +9,10 @@
 </head>
 <body>
     @if (true)
-        
-    @else
-        
-    @endif
     <h1>Hello</h1>
+    @else
+        <h1>bye</h1>
+    @endif
+    
 </body>
 </html>
