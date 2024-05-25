@@ -4,7 +4,9 @@
         <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
             <h2 class="text-2xl font-bold mb-6 text-gray-900 text-center">Register</h2>
             
-            <form action="#" method="POST" class="space-y-6">
+            <form action="{{ route('register')}}" method="POST" class="space-y-6">
+                
+                @csrf
                 <!-- Email -->
                 <div>
                     <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
