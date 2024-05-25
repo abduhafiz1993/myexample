@@ -11,12 +11,12 @@
     <nav class="bg-gray-800 p-4">
         <div class="container mx-auto flex justify-between items-center">
             <div class="text-white font-bold">
-                <a href="/">MyApp</a>
+                <a href="{{ route('home')}}">MyApp</a>
             </div>
             <div class="space-x-4">
                     <a href="" class="text-white">Dashboard</a>
                     <a href="" class="text-white">Login</a>
-                    <a href="" class="text-white">Register</a>
+                    <a href="{{ route('register')}}" class="text-white">Register</a>
             </div>
         </div>
     </nav>
