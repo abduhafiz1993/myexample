@@ -1,12 +1,12 @@
 
     <x-layout>
+
+        @auth
+            <h1>Logged In</h1>
+        @endauth
     
-        <h1>Hello</h1>
-        <form action="/" method="POST">
-        @csrf
-        <input type="text">
-        <button type="submit"></button>
-    </form>
+        <h1>Hello My guesst</h1>
+    
     
     </x-layout> 
 
