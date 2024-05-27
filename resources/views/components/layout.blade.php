@@ -15,7 +15,7 @@
             </div>
             <div class="space-x-4">
                     <a href="" class="text-white">Dashboard</a>
-                    <a href="" class="text-white">Login</a>
+                    <a href="{{ route('login')}}" class="text-white">Login</a>
                     <a href="{{ route('register')}}" class="text-white">Register</a>
             </div>
         </div>
