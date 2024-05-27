@@ -2,7 +2,7 @@
     <div class="bg-gray-100 flex items-center justify-center h-screen">
 
         <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-            <h2 class="text-2xl font-bold mb-6 text-gray-900 text-center">Register</h2>
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 text-center"> Login</h2>
             
             <form action="{{ route('login')}}" method="POST" class="space-y-6">
                 
@@ -11,8 +11,7 @@
                 <div>
                     <label for="name" class="block text-sm font-medium text-gray-700">Username</label>
                     <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                    class="input @error('name') ring-red-500 @enderror" 
-                    value="{{ old('username')}}">
+                    value="{{ old('name')}}">
                     @error('name')
                         <p class="error">{{ $message }}</p>
                     @enderror
@@ -26,7 +25,7 @@
                 
                 <!-- Remeber me -->
                  <div>
-                    <input type="checkbox" name="remember" id="remember" value="Remeber me">
+                    <input type="checkbox" name="remember" id="remember" value=""> <label for="remember">Remember me</label>
                  </div>
 
                 @error('felids')

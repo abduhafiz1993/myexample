@@ -14,9 +14,20 @@
                 <a href="{{ route('home')}}">MyApp</a>
             </div>
             <div class="space-x-4">
-                    <a href="" class="text-white">Dashboard</a>
-                    <a href="{{ route('login')}}" class="text-white">Login</a>
-                    <a href="{{ route('register')}}" class="text-white">Register</a>
+            @auth
+                <a href="{{ route('dashboard')}}" class="text-white">Dashboard</a>
+                <form action="{{ route ('logout')}}" method="post">
+                    @csrf
+                    <button type="submit" class="text-white">Logout</button>
+                </form>
+            @endauth
+
+            @guest                
+                
+                <a href="{{ route('login')}}" class="text-white">Login</a>
+                <a href="{{ route('register')}}" class="text-white">Register</a>
+            @endguest
+            
             </div>
         </div>
     </nav>
